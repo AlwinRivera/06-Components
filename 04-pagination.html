@@ -38,27 +38,39 @@
       }
 
       .pagination {
+        width: 400px;
         display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        column-gap: 24px;
+        margin: 100px auto;
       }
 
       .btn {
-        width: 40px;
-        height: 40px;
+        width: 48px;
+        height: 48px;
         border: none;
         cursor: pointer;
         border-radius: 50%;
+        background-color: #fff;
+        border: 1px solid #087f5b;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
 
       .btn-icon {
         width: 24px;
         height: 24px;
+        stroke: #087f5b;
       }
 
       ul {
         display: flex;
-        list-style: none;
-        gap: 20px;
         align-items: center;
+        justify-content: center;
+        list-style: none;
+        gap: 24px;
       }
 
       li {
@@ -67,10 +79,13 @@
       }
 
       .active {
-        padding: 3.5px;
+        padding: 7px;
         background-color: #087f5b;
         border-radius: 50%;
         color: #fff;
+        width: 28px;
+        height: 28px;
+        text-align: center;
       }
     </style>
   </head>
